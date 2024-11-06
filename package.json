@@ -1,0 +1,40 @@
+{
+  "name": "discord-clone",
+  "version": "1.0.0",
+  "description": "Discord benzeri bir uygulama",
+  "main": "main.js",
+  "scripts": {
+    "start": "cd client && npm start",
+    "electron": "electron .",
+    "build": "cd client && npm run build && electron-builder",
+    "backend": "node server.js"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1692.0",
+    "bcrypt": "^5.1.1",
+    "buffer": "^6.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "simple-peer": "^9.11.1",
+    "socket.io": "^4.0.0"
+  },
+  "devDependencies": {
+    "electron": "^23.1.0",
+    "electron-builder": "^23.0.0"
+  },
+  "build": {
+    "appId": "com.yourapp.id",
+    "productName": "Discord Benzeri Uygulama",
+    "files": [
+      "main.js",
+      "package.json",
+      "public/**/*",
+      "client/build/**/*"
+    ],
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
