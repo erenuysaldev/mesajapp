@@ -1,0 +1,171 @@
+/* Settings.css */
+.settings-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.settings-container {
+    background-color: #36393f;
+    width: 80%; /* Genişliği düzelttik */
+    height: 80%; /* Yüksekliği düzelttik */
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Dikeyde ortaladık */
+    margin: auto; /* Ortalamak için */
+}
+
+.settings-header {
+    background-color: #2f3136;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #202225;
+    width: 100%;
+}
+
+
+.settings-header h2 {
+    color: #fff;
+    margin: 0;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: #dcddde;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.settings-profile {
+    display: flex;
+    align-items: center; /* Dikey olarak ortala */
+}
+
+.gear-icon {
+    margin-left: 10px; /* Profil bileşeni ile çark simgesi arasında boşluk */
+    cursor: pointer; /* İmleç değişimi */
+}
+
+.settings-menu {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+
+.settings-sidebar {
+    width: 250px;
+    background-color: #2f3136;
+    padding: 20px;
+    border-right: 1px solid #202225;
+    box-sizing: border-box; /* Padding ve border'ı dahil ettik */
+}
+
+.settings-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.settings-categories h3 {
+    color: #dcddde;
+    margin-bottom: 16px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.settings-option {
+    background: none;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    color : #dcddde;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.settings-option:hover {
+    background-color: #42464d;
+}
+
+.settings-option.active {
+    background-color: #5865f2;
+    color: #fff;
+}
+
+.settings-content {
+    flex: 1;
+    padding: 20px;
+    color: #dcddde;
+    display: flex;
+    justify-content: center; /* Yatayda ortaladık */
+    align-items: center; /* Dikeyde ortaladık */
+    width: 100%;
+}
+
+
+/* Profil, Ses Ayarları ve Bas Konuş sayfaları için stil */
+.profile-settings,
+.audio-settings,
+.push-to-talk-settings {
+    padding: 20px;
+    color: #dcddde;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Yatayda ortaladık */
+    align-items: center; /* Dikeyde ortaladık */
+}
+
+/* Yeni stil eklemeleri */
+.profile-container {
+    display: flex;
+    align-items: center; /* Dikey olarak ortaladık */
+    padding: 10px;
+    justify-content: center; /* Yatayda ortaladık */
+}
+
+
+.profile-avatar {
+    width: 50px; /* Profil resmi boyutu */
+    height: 50px;
+    border-radius: 50%; /* Yuvarlak profil resmi */
+    margin-right: 10px; /* Kullanıcı adı ile resim arasında boşluk */
+}
+
+.username {
+    font-size: 16px; /* Kullanıcı adı boyutu */
+    font-weight: bold; /* Kullanıcı adı kalın */
+    color: #dcddde; /* Kullanıcı adı rengi */
+}
+.upload-button {
+    background-color: #5865f2; /* Buton rengi */
+    color: #fff; /* Buton yazı rengi */
+    padding: 10px 15px; /* Buton iç boşlukları */
+    border: none;
+    border-radius: 4px; /* Kenarları yuvarlat */
+    cursor: pointer; /* İmleç değişimi */
+    transition: background-color 0.2s; /* Geçiş efekti */
+    margin-left: 10px; /* Buton ve kullanıcı adı arasına boşluk ekledik */
+}
+.upload-button:hover {
+    background-color: #4752c4; /* Hover durumu rengi */
+}
+
+.file-input {
+    display: none; /* Dosya girişi gizlendi */
+}
